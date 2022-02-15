@@ -1,0 +1,17 @@
+  #contactForm{
+      width:100%;
+      height:auto;
+      position: relative;
+     
+  }
+#contactForm::after {
+  content: '';
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  background: #1552F0;
+  transform: skewY(-5deg);
+  z-index: -1;
+}

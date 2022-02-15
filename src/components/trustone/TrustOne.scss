@@ -1,0 +1,18 @@
+#trustOne{
+margin-top:-100px;
+position: relative;
+     
+    p{z-index:99}
+}
+
+#trustOne::before{
+    content:'';
+     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%), rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(65px);
+     
+    opacity:0.9;
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: 0;
+}

@@ -1,0 +1,128 @@
+#consultancy {
+    position: relative;
+  h1 {
+    
+    font-family: 'PT Serif', serif;
+    font-weight: 800;
+    position: relative;
+    span {
+      background: -webkit-linear-gradient(180deg, #15bbf0, #1552f0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    margin-bottom: 20px;
+  }
+  .circles {
+    position: relative;
+    padding-left: 45px;
+    margin: 0 20px;
+font-size: 12px;
+display: flex;
+align-items: center;
+    span {
+      padding-left: 10px;
+      align-items: center;
+    }
+  }
+  .circles::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #15f0a1;
+    left: 10px;
+    z-index: 99;
+    border: 2px solid #fff;
+    box-shadow: (0 2px 8px -4px #000);
+  }
+  .circles::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #15bbf0;
+    left: 0px;
+    border: 2px solid #fff;
+    box-shadow: (0 2px 8px -4px #000);
+  }
+  .gradientBg {
+    background: linear-gradient(
+      99.46deg,
+      rgba(49, 231, 220, 0.1) 0%,
+      rgba(140, 49, 231, 0.034) 100%
+    );
+    backdrop-filter: blur(80px);
+    border-radius: 25px;
+    position: absolute;
+    width:60%;
+    box-shadow: 0px 10px 30px #f5f5f5;
+     .blueBg{
+         background: #060D25;
+border-radius: 25px;
+padding:15px;
+color:#fff;
+     }
+     .greyBg{
+         background: #f5f5f5;
+border-radius: 25px;
+padding:15px;
+color:#000;
+     }
+  }
+  button{
+    padding:8px 25px;
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width:820px){
+    #consultancy {
+    .gradientBg{
+        width: 100% !important;
+         bottom:-150px;
+         left:0px !important;
+    }
+}
+}
+
+@media only screen and (max-width:440px){
+#consultancy{
+  h1,p{
+    text-align: center !important;
+  }
+  .btns{
+    justify-content: center;
+    flex-direction: column;
+    .circles{
+      margin: 20px 0;
+    }
+  }
+  .gradientBg1 {
+    background: linear-gradient(
+      99.46deg,
+      rgba(49, 231, 220, 0.1) 0%,
+      rgba(140, 49, 231, 0.034) 100%
+    );
+    backdrop-filter: blur(80px);
+    border-radius: 25px;
+    margin: -20px auto 0 auto;
+    
+    box-shadow: 0px 10px 30px #f5f5f5;
+     .blueBg{
+         background: #060D25;
+border-radius: 25px;
+padding:15px;
+color:#fff;
+     }
+     .greyBg{
+         background: #f5f5f5;
+border-radius: 25px;
+padding:15px;
+color:#000;
+     }
+  }
+}
+}

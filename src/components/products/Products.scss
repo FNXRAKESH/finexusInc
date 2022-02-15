@@ -1,0 +1,105 @@
+#ourProducts{
+  background-color: #F5FBFE;
+  z-index:-1;
+  position: relative;
+    h1 {
+     
+    padding-bottom: 10px;
+    font-family: 'PT Serif', serif;
+    font-weight: 800;
+    line-height: 60px;
+     font-size: 54px !important;
+    span {
+      background: -webkit-linear-gradient(180deg, #15bbf0, #1552f0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .blueBox{
+      display: flex;
+       background-color: #fff;
+      padding:30px;
+      color:#000;
+      align-items: center;
+       border-radius: 10px;
+        box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.08);
+      .box1{
+           background-color:#F3F3F3;
+          height:100px;
+          width: 100px;
+          border-radius: 10px;
+      }
+       h5{
+          font-weight: 600 !important;
+        }
+  }
+    .whiteBox{
+      background-color: #fff;
+      display: flex;
+      padding:30px;
+    border-radius: 10px;
+      align-items: center;
+       box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.08);
+      .box2{
+         background-color:#F3F3F3;
+          height:100px;
+          width: 100px;
+          border-radius: 10px;
+        }
+        h5{
+          font-weight: 600 !important;
+        }
+  }
+}
+
+
+@media only screen and (max-width:414px){
+  .box1, .box2{
+    
+    height: 50px !important;
+    
+  }
+
+  .blueBox, .whiteBox{
+    border: 2px solid #F2F2F2;
+    div:nth-child(2){
+      padding:0 10px !important;
+    }
+     p{text-align: left !important;}
+  }
+  #ourProducts{
+    background-color: #fff;
+    h1,p{
+      text-align: center;
+    }
+    h1{
+
+      font-size: 30px !important;
+      line-height: 35px !important;
+    }
+    .blueBox{
+      background: linear-gradient(to right,#1552F0 ,#15BBF0);
+      color:#fff;
+      .box1{
+           background: linear-gradient(to right,#194FDC ,#1552F0);
+    }
+  }
+}
+  #ourProducts::before {
+  content: '';
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  background: #1552f0;
+  transform: skewY(-10deg);
+  z-index: -1;
+  border-top: 10px solid #15bbf0;
+}
+#solutions .blueBg, #solutions .colorBg{
+   
+  padding:20px !important
+}
+}

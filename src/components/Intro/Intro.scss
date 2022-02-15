@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+#intro {
+  h1 {
+    // font-size: 4.3rem !important;
+     
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+     
+    span {
+      background: linear-gradient(to left, #15bbf0, #1552f0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 15px;
+     
+  }
+  #getStarted {
+    box-shadow: (0 2px 8px -4px #1552f0);
+  }
+  .tag {
+    background: linear-gradient(
+      to right,
+      rgba(49, 231, 220,0.15) 60%,
+      rgba(140, 49, 231,0.051)
+    );
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 16px !important;
+  }
+}
+  // .blurBg {
+  //   background-color: rgba(255, 255, 255, 0.596);
+
+  //   -webkit-backdrop-filter: blur(65px);
+  //   backdrop-filter: blur(65px);
+  //   width: 100%;
+  //   min-height: 50%;
+  //   padding: 20px 40px;
+  //   filter: blur(20px);
+  //   p {
+  //     font-size: 13px;
+  //   }
+  // }
+#trustOne {
+  margin-top: -18rem;
+  position: relative;
+  z-index: 99;
+
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  #trustOne {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #trustOne {
+    margin-top: -8em !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #intro {
+    padding-top: 20px;
+    h1 {
+      font-size: 2rem !important;
+      display: flex;
+      flex-wrap: wrap;
+       
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #intro {
+    padding-top: 20px;
+    h1 {
+      display: block !important;
+      text-align: center !important;
+    }
+  }
+  .tag{
+    width: 100% !important;
+    text-align: center;
+  }
+  .btns{
+    display: flex;
+    justify-content: center;
+  }
+}
