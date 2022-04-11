@@ -1,16 +1,16 @@
 import React from 'react';
 import ourproducts from '../../images/ourproducts.png';
-import './Products.scss'
+import './Products.scss';
 
 const OurProducts = () => {
   return (
-    <div id="ourProducts" className="py-md-5">
+    <div id="ourProducts" className="pb-md-5">
       <div className="container py-5 pb-sm-0">
         <div className="row justify-content-md-center">
-          <div className="col-lg-6 pb-md-0 pb-5">
-            <img src={ourproducts} alt="" className="img-fluid" />
+          <div className="col-lg-6 pb-md-0 pb-5 gradientBg2 col-md-auto">
+            <img src={ourproducts} alt="" className="img-fluid " />
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-auto">
             <p style={{ color: '#1552F0', fontWeight: 600, fontSize: 20 }}>
               Our business products
             </p>
@@ -20,8 +20,9 @@ const OurProducts = () => {
               <span>Products</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We pride ourselves on our quality, and we are always working to
+              make sure that we are providing you with the best possible
+              products and services.
             </p>
             <div className="blueBox">
               <div className="box1"></div>

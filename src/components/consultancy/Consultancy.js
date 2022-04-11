@@ -58,7 +58,7 @@ const Consultancy = () => {
               </div>
             </div>
           </div>
-          <div className="gradientBg py-0 px-3 d-none d-md-block mt-3">
+          <div className="gradientBg py-3 px-3 d-none d-md-block my-3">
             <div className="row">
               <div className="col blueBg m-3">
                 <img src={consultancy1} alt="" height={80} />
@@ -87,7 +87,7 @@ const Consultancy = () => {
           <img src={consultancy} alt="" className="img-fluid" />
         </div>
       </div>
-      <div style={{height:60}} className='d-none d-md-block'></div>
+      <div style={{ height: 60 }} className="d-none d-md-block"></div>
     </div>
   );
 };

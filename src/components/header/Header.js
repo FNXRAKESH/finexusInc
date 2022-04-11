@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
  import Finexus from '../../images/Finexus.png'
 export default class Header extends Component {
-  state={bgColor:'white'}
+  state = { bgColor:'#F5FBFE' };
   componentDidMount = () => {
     window.onscroll = function () {
       // myFunction();
@@ -48,11 +48,17 @@ export default class Header extends Component {
         }}
       >
         <div className="container">
-          <img
-            className="navbar-brand fw-bold"
-            src={Finexus}
-            alt="FinexusInc"
-          />
+          <Link
+            to="/"
+            className="nav-link"
+            onClick={() => this.setState({ bgColor: '#F5FBFE' })}
+          >
+            <img
+              className="navbar-brand fw-bold"
+              src={Finexus}
+              alt="FinexusInc"
+            />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -66,7 +72,7 @@ export default class Header extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto me-5">
+            <ul className="navbar-nav mr-auto me-5 flex-grow-1">
               <li
                 className="nav-item"
                 data-toggle="collapse"

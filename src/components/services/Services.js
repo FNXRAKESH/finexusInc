@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 const Services = () => {
   return (
-    <div id="services" className="container py-5">
-      <div className="row justify-content-sm-center pb-md-5">
-        <div className="col-md-6">
+    <div id="services" className="container pt-5">
+      <div className="row pb-md-5">
+        <div className="col-md-5">
           <img src={building} alt="" className="img-fluid" />
           <div className="pt-3">
             <p
@@ -20,7 +20,8 @@ const Services = () => {
                 paddingTop: 10,
                 paddingBottom: 10,
                 marginBottom: 0,
-                fontWeight: 700
+                fontWeight: 700,
+                fontFamily: 'PT Serif Pro Normal'
               }}
             >
               Services we provide
@@ -44,10 +45,10 @@ const Services = () => {
           <div className="d-flex  align-items-center">
             <img src={chat} alt="" className="d-block d-md-none" />
             <div>
-              <h5 className="fw-bold">Business consulting</h5>
+              <h4 className="fw-bold">Business consulting</h4>
               <p className="small">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Our team comprises of industry-specific experts. We offer
+                professional advice and actionable solutions to businesses.
               </p>
             </div>
           </div>
@@ -58,10 +59,10 @@ const Services = () => {
           <div className="d-flex align-items-center">
             <img src={setting} alt="" className="d-block d-md-none" />
             <div>
-              <h5 className="fw-bold">Maintenance support</h5>
+              <h4 className="fw-bold">Maintenance support</h4>
               <p className="small">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                We are here to manage the products that are already released and
+                in used by companies or customers.
               </p>
             </div>
           </div>

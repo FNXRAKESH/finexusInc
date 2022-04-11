@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Open+Sans:wght@500&display=swap');
 
  html,body{
    font-family: 'PT Serif', serif;
@@ -7,25 +7,24 @@
    padding:0;
  }
 h1,.accordion-button{
-  font-family: 'PT SerifB', serif !important;
+  font-family: 'PT Serif', serif !important;
   font-size: 48px;
   line-height: 58px;
 }
 
 button, p{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
    font-size: 18px; 
 }
 
  a{
-   font-family: 'PT Serif', serif;
-   font-weight: 600;
-   
+   font-family: 'PT Serif Pro Normal';
+    
  }
 
- h3{
-    font-family: 'Open Sans', sans-serif;
- }
+ h3, h5, h2, h6{
+    font-family: 'Inter', sans-serif; 
+  }
  
 
  @media only screen and (max-width:414px){
@@ -38,3 +37,461 @@ h1{
 hr{
   opacity: 0.1;
 }
+
+/*PT Serif Pro Narrow font*/
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-ExtraBoldItali.eot');
+  src: local('PT Serif Pro Narrow ExtraBold Italic'), local('PTSerifProNarrow-ExtraBoldItali'),
+    url('./fonts/PTSerifProNarrow-ExtraBoldItali.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-ExtraBoldItali.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-ExtraBoldItali.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-ExtraBoldItali.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Caption';
+  src: url('./fonts/PTSerifProCaption.eot');
+  src: local('PT Serif Pro Caption'), local('PTSerifProCaption'),
+    url('./fonts/PTSerifProCaption.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProCaption.woff2') format('woff2'),
+    url('./fonts/PTSerifProCaption.woff') format('woff'),
+    url('./fonts/PTSerifProCaption.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-Demi.eot');
+  src: local('PT Serif Pro Extended Demi'), local('PTSerifProExtended-Demi'),
+    url('./fonts/PTSerifProExtended-Demi.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-Demi.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-Demi.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-Demi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-Black.eot');
+  src: local('PT Serif Pro Extended Black'), local('PTSerifProExtended-Black'),
+    url('./fonts/PTSerifProExtended-Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-Black.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-Black.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-ExtraBold.eot');
+  src: local('PT Serif Pro Extended ExtraBold'), local('PTSerifProExtended-ExtraBold'),
+    url('./fonts/PTSerifProExtended-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-ExtraBold.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-ExtraBold.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-BoldItalic.eot');
+  src: local('PT Serif Pro Extended Bold Italic'), local('PTSerifProExtended-BoldItalic'),
+    url('./fonts/PTSerifProExtended-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-BoldItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-BoldItalic.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-Bold.eot');
+  src: local('PT Serif Pro Narrow Bold'), local('PTSerifProNarrow-Bold'),
+    url('./fonts/PTSerifProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-Bold.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-Bold.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-Demi.eot');
+  src: local('PT Serif Pro Demi'), local('PTSerifPro-Demi'),
+    url('./fonts/PTSerifPro-Demi.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-Demi.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-Demi.woff') format('woff'),
+    url('./fonts/PTSerifPro-Demi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-BookItalic.eot');
+  src: local('PT Serif Pro Extended Book Italic'), local('PTSerifProExtended-BookItalic'),
+    url('./fonts/PTSerifProExtended-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-BookItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-BookItalic.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-Black.eot');
+  src: local('PT Serif Pro Black'), local('PTSerifPro-Black'),
+    url('./fonts/PTSerifPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-Black.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-Black.woff') format('woff'),
+    url('./fonts/PTSerifPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-DemiItalic.eot');
+  src: local('PT Serif Pro Extended Demi Italic'), local('PTSerifProExtended-DemiItalic'),
+    url('./fonts/PTSerifProExtended-DemiItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-DemiItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-DemiItalic.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-DemiItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow.eot');
+  src: local('PT Serif Pro Narrow'), local('PTSerifProNarrow'),
+    url('./fonts/PTSerifProNarrow.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-ExtraBoldIta.eot');
+  src: local('PT Serif Pro Extended ExtraBold Italic'), local('PTSerifProExtended-ExtraBoldIta'),
+    url('./fonts/PTSerifProExtended-ExtraBoldIta.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-ExtraBoldIta.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-ExtraBoldIta.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-ExtraBoldIta.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-DemiItalic.eot');
+  src: local('PT Serif Pro Narrow Demi Italic'), local('PTSerifProNarrow-DemiItalic'),
+    url('./fonts/PTSerifProNarrow-DemiItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-DemiItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-DemiItalic.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-DemiItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-ExtraBoldItalic.eot');
+  src: local('PT Serif Pro ExtraBold Italic'), local('PTSerifPro-ExtraBoldItalic'),
+    url('./fonts/PTSerifPro-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-ExtraBoldItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-ExtraBoldItalic.woff') format('woff'),
+    url('./fonts/PTSerifPro-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-ExtraBold.eot');
+  src: local('PT Serif Pro Narrow ExtraBold'), local('PTSerifProNarrow-ExtraBold'),
+    url('./fonts/PTSerifProNarrow-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-ExtraBold.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-ExtraBold.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-BlackItalic.eot');
+  src: local('PT Serif Pro Black Italic'), local('PTSerifPro-BlackItalic'),
+    url('./fonts/PTSerifPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-BlackItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-BlackItalic.woff') format('woff'),
+    url('./fonts/PTSerifPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-Book.eot');
+  src: local('PT Serif Pro Narrow Book'), local('PTSerifProNarrow-Book'),
+    url('./fonts/PTSerifProNarrow-Book.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-Book.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-Book.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-Italic.eot');
+  src: local('PT Serif Pro Narrow Italic'), local('PTSerifProNarrow-Italic'),
+    url('./fonts/PTSerifProNarrow-Italic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-Italic.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-Italic.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-BoldItalic.eot');
+  src: local('PT Serif Pro Narrow Bold Italic'), local('PTSerifProNarrow-BoldItalic'),
+    url('./fonts/PTSerifProNarrow-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-BoldItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-BoldItalic.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-Italic.eot');
+  src: local('PT Serif Pro Extended Italic'), local('PTSerifProExtended-Italic'),
+    url('./fonts/PTSerifProExtended-Italic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-Italic.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-Italic.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Caption';
+  src: url('./fonts/PTSerifProCaption-Italic.eot');
+  src: local('PT Serif Pro Caption Italic'), local('PTSerifProCaption-Italic'),
+    url('./fonts/PTSerifProCaption-Italic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProCaption-Italic.woff2') format('woff2'),
+    url('./fonts/PTSerifProCaption-Italic.woff') format('woff'),
+    url('./fonts/PTSerifProCaption-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-Bold.eot');
+  src: local('PT Serif Pro Bold'), local('PTSerifPro-Bold'),
+    url('./fonts/PTSerifPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-Bold.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-Bold.woff') format('woff'),
+    url('./fonts/PTSerifPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-Demi.eot');
+  src: local('PT Serif Pro Narrow Demi'), local('PTSerifProNarrow-Demi'),
+    url('./fonts/PTSerifProNarrow-Demi.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-Demi.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-Demi.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-Demi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-Bold.eot');
+  src: local('PT Serif Pro Extended Bold'), local('PTSerifProExtended-Bold'),
+    url('./fonts/PTSerifProExtended-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-Bold.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-Bold.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-BlackItalic.eot');
+  src: local('PT Serif Pro Extended Black Italic'), local('PTSerifProExtended-BlackItalic'),
+    url('./fonts/PTSerifProExtended-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-BlackItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-BlackItalic.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-BookItalic.eot');
+  src: local('PT Serif Pro Book Italic'), local('PTSerifPro-BookItalic'),
+    url('./fonts/PTSerifPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-BookItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-BookItalic.woff') format('woff'),
+    url('./fonts/PTSerifPro-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-BlackItalic.eot');
+  src: local('PT Serif Pro Narrow Black Italic'), local('PTSerifProNarrow-BlackItalic'),
+    url('./fonts/PTSerifProNarrow-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-BlackItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-BlackItalic.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-Book.eot');
+  src: local('PT Serif Pro Book'), local('PTSerifPro-Book'),
+    url('./fonts/PTSerifPro-Book.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-Book.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-Book.woff') format('woff'),
+    url('./fonts/PTSerifPro-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended.eot');
+  src: local('PT Serif Pro Extended'), local('PTSerifProExtended'),
+    url('./fonts/PTSerifProExtended.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended.woff') format('woff'),
+    url('./fonts/PTSerifProExtended.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Normal';
+  src: url('./fonts/PTSerifPro.eot');
+  src: local('PT Serif Pro'), local('PTSerifPro'),
+    url('./fonts/PTSerifPro.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro.woff2') format('woff2'),
+    url('./fonts/PTSerifPro.woff') format('woff'),
+    url('./fonts/PTSerifPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-BoldItalic.eot');
+  src: local('PT Serif Pro Bold Italic'), local('PTSerifPro-BoldItalic'),
+    url('./fonts/PTSerifPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-BoldItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-BoldItalic.woff') format('woff'),
+    url('./fonts/PTSerifPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-Italic.eot');
+  src: local('PT Serif Pro Italic'), local('PTSerifPro-Italic'),
+    url('./fonts/PTSerifPro-Italic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-Italic.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-Italic.woff') format('woff'),
+    url('./fonts/PTSerifPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Extended';
+  src: url('./fonts/PTSerifProExtended-Book.eot');
+  src: local('PT Serif Pro Extended Book'), local('PTSerifProExtended-Book'),
+    url('./fonts/PTSerifProExtended-Book.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProExtended-Book.woff2') format('woff2'),
+    url('./fonts/PTSerifProExtended-Book.woff') format('woff'),
+    url('./fonts/PTSerifProExtended-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-DemiItalic.eot');
+  src: local('PT Serif Pro Demi Italic'), local('PTSerifPro-DemiItalic'),
+    url('./fonts/PTSerifPro-DemiItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-DemiItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-DemiItalic.woff') format('woff'),
+    url('./fonts/PTSerifPro-DemiItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro';
+  src: url('./fonts/PTSerifPro-ExtraBold.eot');
+  src: local('PT Serif Pro ExtraBold'), local('PTSerifPro-ExtraBold'),
+    url('./fonts/PTSerifPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifPro-ExtraBold.woff2') format('woff2'),
+    url('./fonts/PTSerifPro-ExtraBold.woff') format('woff'),
+    url('./fonts/PTSerifPro-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-Black.eot');
+  src: local('PT Serif Pro Narrow Black'), local('PTSerifProNarrow-Black'),
+    url('./fonts/PTSerifProNarrow-Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-Black.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-Black.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Pro Narrow';
+  src: url('./fonts/PTSerifProNarrow-BookItalic.eot');
+  src: local('PT Serif Pro Narrow Book Italic'), local('PTSerifProNarrow-BookItalic'),
+    url('./fonts/PTSerifProNarrow-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/PTSerifProNarrow-BookItalic.woff2') format('woff2'),
+    url('./fonts/PTSerifProNarrow-BookItalic.woff') format('woff'),
+    url('./fonts/PTSerifProNarrow-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+/*PT Serif Pro Narrow font*/

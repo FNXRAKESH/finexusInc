@@ -14,9 +14,16 @@ const Landing = () => {
         <Intro />
         <Services />
         <OurProducts />
-        <div style={{ backgroundColor: '#F5FBFE', height:200}} className='d-none d-md-block'></div>
+        <div
+          style={{ backgroundColor: '#fff', height: 200 }}
+          className="d-none d-md-block"
+        ></div>
         <Solutions />
         <Consultancy />
+        <div
+          style={{ backgroundColor: '#fff', height: 100 }}
+          className="d-none d-md-block"
+        ></div>
         <WhyUs />
         <News />
         <Faq />

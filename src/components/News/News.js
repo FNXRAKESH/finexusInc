@@ -50,6 +50,7 @@ const News = () => {
           </p>
         </div>
       </div>
+      <hr />
     </div>
   );
 };

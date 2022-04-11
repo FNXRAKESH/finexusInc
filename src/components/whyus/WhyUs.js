@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 const WhyUs = () => {
   return (
-    <div id="whyUs" className="pt-5">
+    <div id="whyUs">
       <div className="container pt-5">
         <div className="row">
           <div className="col-lg-6 d-none d-md-block pb-5">
@@ -202,98 +202,109 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
-        <div style={{ height: 100 }} className="d-none d-md-block"></div>
-        <div className="row py-5">
-          <div className="col-lg-6">
-            <h1>
-              Improved over
-              <span> 160+</span>&nbsp;businesses worldwide
-            </h1>
-          </div>
-          <div className="col-lg-6 ps-md-5">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum
-              dolor sit amet.
-            </p>
-          </div>
-        </div>
-        <div className="testimonial row">
-          <div
-            className="col-lg-4 position-relative mb-3"
-            style={{ zIndex: 1 }}
-          >
-            <div className="bgBlue">
-              <FontAwesomeIcon icon={faQuoteRight} color="#15BBF0" />
-              <p className="py-3">
-                They have been a great partner as we grow our business ...
-              </p>
-              <div className="d-flex">
-                <div className="flex-grow-1">
-                  <h6>— Carla Smith</h6>
-                  <small style={{ fontWeight: 'normal' }}>CTO, ClassKlap</small>
-                </div>
-                <img src={test} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 mb-3" style={{ zIndex: 1 }}>
-            <div className="test1">
-              <FontAwesomeIcon icon={faQuoteRight} color="#dadcdf" />
-              <p className="py-3">
-                We finally found a smart and conscientious partner
-              </p>
-              <div className="d-flex">
-                <div className="flex-grow-1">
-                  <h6>— Carla Smith</h6>
-                  <small style={{ fontWeight: 'normal' }}>CTO, Ascendus</small>
-                </div>
-                <img src={test} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 mb-3" style={{ zIndex: 1 }}>
-            <div className="test1">
-              <FontAwesomeIcon icon={faQuoteRight} color="#dadcdf" />
-              <p className="py-3">
-                I just wanted to share a quick note and you let you know that
-                ...
-              </p>
-              <div className="d-flex">
-                <div className="flex-grow-1">
-                  <h6>— Carla Smith</h6>
-                  <small style={{ fontWeight: 'normal' }}>CTO, Credit4Work</small>
-                </div>
-                <img src={test} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <div style={{ height: 200 }} className="d-none d-md-block"></div>
       </div>
-      <div className="count py-5">
-        <div className="container py-5">
-          <div className="row">
-            <div className="col-lg-6 mb-3">
-              <div className="row">
-                <div className="col">
-                  <h3>32 +</h3>
-                  <p>Companies</p>
-                </div>
-                <div className="col">
-                  <h3>$ 1.2M</h3>
-                  <p>Follows on Internet</p>
+      <div className="count">
+        <div className="container">
+          <div className="row py-5">
+            <div className="col-lg-6">
+              <h1>
+                Improved over
+                <span> 160+</span>&nbsp;businesses worldwide
+              </h1>
+            </div>
+            <div className="col-lg-6 ps-md-5">
+              <p className="text-start">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum
+                dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div className="testimonial row">
+            <div
+              className="col-lg-4 position-relative mb-3"
+              style={{ zIndex: 1 }}
+            >
+              <div className="bgBlue">
+                <FontAwesomeIcon icon={faQuoteRight} color="#15BBF0" />
+                <p className="py-3">
+                  They have been a great partner as we grow our business ...
+                </p>
+                <div className="d-flex">
+                  <div className="flex-grow-1">
+                    <h6>— Carla Smith</h6>
+                    <small style={{ fontWeight: 'normal' }}>
+                      CTO, ClassKlap
+                    </small>
+                  </div>
+                  <img src={test} alt="" />
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 mb-3">
-              <div className="row">
-                <div className="col">
-                  <h3>123</h3>
-                  <p>Businesses</p>
+            <div className="col-lg-4 mb-3" style={{ zIndex: 1 }}>
+              <div className="test1">
+                <FontAwesomeIcon icon={faQuoteRight} color="#dadcdf" />
+                <p className="py-3">
+                  We finally found a smart and conscientious partner
+                </p>
+                <div className="d-flex">
+                  <div className="flex-grow-1">
+                    <h6>— Carla Smith</h6>
+                    <small style={{ fontWeight: 'normal' }}>
+                      CTO, Ascendus
+                    </small>
+                  </div>
+                  <img src={test} alt="" />
                 </div>
-                <div className="col">
-                  <h3>$ 1.2B</h3>
-                  <p>Portfolio Companies</p>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-3" style={{ zIndex: 1 }}>
+              <div className="test1">
+                <FontAwesomeIcon icon={faQuoteRight} color="#dadcdf" />
+                <p className="py-3">
+                  I just wanted to share a quick note and you let you know that
+                  ...
+                </p>
+                <div className="d-flex">
+                  <div className="flex-grow-1">
+                    <h6>— Carla Smith</h6>
+                    <small style={{ fontWeight: 'normal' }}>
+                      CTO, Credit4Work
+                    </small>
+                  </div>
+                  <img src={test} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-5">
+            <div className="container py-5">
+              <div className="row">
+                <div className="col-lg-6 mb-3">
+                  <div className="row">
+                    <div className="col text-center">
+                      <h3>32 +</h3>
+                      <p>Companies</p>
+                    </div>
+                    <div className="col text-center">
+                      <h3>$ 1.2M</h3>
+                      <p>Follows on Internet</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6 mb-3">
+                  <div className="row">
+                    <div className="col text-center">
+                      <h3>123</h3>
+                      <p>Businesses</p>
+                    </div>
+                    <div className="col text-center">
+                      <h3>$ 1.2B</h3>
+                      <p>Portfolio Companies</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

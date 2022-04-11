@@ -4,11 +4,11 @@ import rightImg from '../../images/rightImg.png';
 import leftImg from '../../images/leftImg.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
-import Group4 from '../../images/au1.png';
-import Group5 from '../../images/ck1.png';
-import Group6 from '../../images/cw1.png';
-import Group7 from '../../images/em1.png';
-import Group8 from '../../images/gp1.png';
+import Group4 from '../../images/clients/au1.png';
+import Group5 from '../../images/clients/ck1.png';
+import Group6 from '../../images/clients/cw1.png';
+import Group7 from '../../images/clients/em1.png';
+import Group8 from '../../images/clients/gp1.png';
 import client from '../../images/client.png';
 import VerticalCarousel from '../testimonySlider/VerticalCarousel';
 import { config } from 'react-spring';
@@ -73,7 +73,7 @@ export default class Solutions extends Component {
               the leading businesses
             </h1>
             <div id="solutionType" className="py-md-5 row align-items-center ">
-              <div className="col-md-6">
+              <div className="col-lg-6 col-md-auto">
                 <img
                   src={rightImg}
                   alt=""
@@ -94,16 +94,16 @@ export default class Solutions extends Component {
 
                 <div className="row py-5 boxes">
                   <div className="col colorBg p-5 me-5">
-                    <h5>32% +</h5>
+                    <h2 className="fw-bold">32% +</h2>
                     <p>Increase page views and grow business</p>
                   </div>
                   <div className="col blueBg p-5">
-                    <h5>32% +</h5>
+                    <h2 className="fw-bold">32% +</h2>
                     <p>Increase page views and grow business</p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 py-2 d-none d-md-block">
+              <div className="col-lg-6 col-md-auto py-2 d-none d-md-block  mx-auto">
                 <img src={rightImg} alt="" className="img-fluid" />
               </div>
             </div>
@@ -136,7 +136,7 @@ export default class Solutions extends Component {
             <div style={{ height: 100 }} className="d-none d-md-block "></div>
             <div
               id="companies"
-              className="d-flex justify-content-center py-md-4 flex-wrap"
+              className="d-flex justify-content-evenly py-md-4 flex-wrap"
             >
               <img src={Group4} alt="" className="img-fluid" />
 
@@ -151,9 +151,9 @@ export default class Solutions extends Component {
           </div>
         </div>
         <div id="clients" className="mb-5">
-          <div className=" container">
-            <div className="happyClients row align-items-center">
-              <div className="col-md-6 d-flex justify-content-center">
+          <div className="container">
+            <div className="happyClients row align-items-center justify-content-around">
+              <div className="col-lg-6  d-flex justify-content-around ps-5">
                 <div>
                   <h1>
                     What our Happy <br />
@@ -161,7 +161,7 @@ export default class Solutions extends Component {
                   </h1>
                   <p
                     style={{
-                      fontSize: 15,
+                      fontSize: 17,
                       fontWeight: 'light',
                       color: 'rgba(255,255,255,0.6)'
                     }}
@@ -172,7 +172,7 @@ export default class Solutions extends Component {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <VerticalCarousel
                   slides={slides}
                   offsetRadius={this.state.offsetRadius}

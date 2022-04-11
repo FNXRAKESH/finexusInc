@@ -145,7 +145,7 @@ class VerticalCarousel extends React.Component {
         id="VerticalCarousel"
         className="d-flex justify-content-center align-items-center"
       >
-        <Wrapper className="flex-grow-1">
+        <Wrapper className="flex-grow-1 sliderContent">
           {this.getPresentableSlides().map((slide, presentableIndex) => (
             <Slide
               key={slide.key}
