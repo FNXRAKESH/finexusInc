@@ -101,7 +101,7 @@ function Slide({
               padding: 10
             }}
           >
-            <div className="slider row align-items-center p-4">
+            <div className="slider row align-items-center p-3">
               <div className="col-md-10">
                 <h6 className="fw-bold">
                   <span style={{paddingRight:10}}>{content.name}</span> |

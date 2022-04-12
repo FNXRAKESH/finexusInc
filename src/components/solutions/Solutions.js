@@ -16,32 +16,25 @@ import { config } from 'react-spring';
 let slides = [
   {
     key: 1,
-    name: 'Carla Smith',
-    company: 'Ascendus',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies justo ut commodo fringilla. Suspendisse elit dui, efficitur sit amet risus at, pharetra finibus purus',
+    name: 'Marion Mathes',
+    company: 'CreditWorks LLC',
+    desc: 'The Finexus team has demonstrated their expertise and creative solutioning which has added real value to our business.  They have been a great partner as we grow our business and we highly recommend the team.',
     img: client
   },
   {
     key: 2,
-    name: 'Liam James',
-    company: 'classklap',
-    desc: 'Aenean non suscipit nibh. Quisque vel consequat quam. Quisque purus tortor, rutrum eget massa sed, pharetra tempor nisl. Sed luctus, arcu sed sollicitudin accumsan, ipsum mi varius dui,',
+    name: 'Jennifer Spaziano',
+    company: 'Ascendus',
+    desc: 'I can’t believe how responsive and thoughtful your team has been. They don’t just say “yes” to things – they ask the right questions that help us get to the right solutions, it’s so great. What a smart , dedicated, and reliable team. We never worry – you don’t leave us hanging.',
     img: client
   },
   {
     key: 3,
-    name: 'Alexander Benjamin',
-    company: 'Credit4Work',
-    desc: 'Duis enim est, molestie a quam sit amet, interdum condimentum justo. Proin semper neque ac magna suscipit, eu rutrum nunc venenatis. Nunc placerat congue turpis ut placerat. ',
+    name: 'Chuck Smith',
+    company: 'CreditWorks LLC',
+    desc: 'CreditWorks has always looked for external resources that match our core values and with Finexus Inc. and the leadership of Dhiman Bhattacharjee, Krishnakumar, and the Finexus Team, we finally found a smart and conscientious partner.',
     img: client
-  },
-  {
-    key: 4,
-    name: 'William James',
-    company: 'GraciePoint',
-    desc: 'Nulla tempor velit orci, in pellentesque nibh iaculis a. Nunc mollis turpis sed magna dictum, ut consequat mauris cursus. Proin volutpat, quam vitae vehicula consequat,',
-    img: client
-  }
+  } 
 ];
 
 
@@ -133,8 +126,8 @@ export default class Solutions extends Component {
                 </div>
               </div>
             </div> */}
-            <div style={{ height: 100 }} className="d-none d-md-block "></div>
-            <div
+            <div style={{ height: 50 }} className="d-none d-md-block "></div>
+            {/* <div
               id="companies"
               className="d-flex justify-content-evenly py-md-4 flex-wrap"
             >
@@ -147,7 +140,7 @@ export default class Solutions extends Component {
               <img src={Group7} alt="" className="img-fluid" />
 
               <img src={Group8} alt="" className="img-fluid" />
-            </div>
+            </div> */}
           </div>
         </div>
         <div id="clients" className="mb-5">

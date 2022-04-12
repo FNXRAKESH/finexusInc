@@ -221,7 +221,7 @@ const WhyUs = () => {
               </p>
             </div>
           </div>
-          <div className="testimonial row">
+          {/* <div className="testimonial row">
             <div
               className="col-lg-4 position-relative mb-3"
               style={{ zIndex: 1 }}
@@ -277,9 +277,9 @@ const WhyUs = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="py-5">
+          <div >
             <div className="container py-5">
               <div className="row">
                 <div className="col-lg-6 mb-3">
