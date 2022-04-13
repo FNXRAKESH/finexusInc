@@ -8,7 +8,8 @@ import Services from '../components/services/Services';
 import Solutions from '../components/solutions/Solutions';
 import WhyUs from '../components/whyus/WhyUs';
 
-const Landing = () => {
+const Landing = (props) => {
+   
     return (
       <>
         <Intro />
@@ -19,7 +20,7 @@ const Landing = () => {
           className="d-none d-md-block"
         ></div>
         <Solutions />
-        <Consultancy />
+        <Consultancy props={props}/>
         <div
           style={{ backgroundColor: '#fff', height: 100 }}
           className="d-none d-md-block"
@@ -32,3 +33,5 @@ const Landing = () => {
 }
  
 export default Landing;
+
+//(510) 585-4200

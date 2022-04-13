@@ -12,6 +12,7 @@ import {
   faLinkedinIn,
   faYoutube
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -129,7 +130,17 @@ const Footer = () => {
                   <small>Start a project</small>
                 </p>
                 <p>
-                  <small>contact@finexusinc.com</small>
+                  <small>
+                    <a
+                      style={{
+                        color: 'rgba(255, 255, 255, 0.6)',
+                        textDecoration: 'none'
+                      }}
+                      href="mailto:info@finexusinc.com"
+                    >
+                      info@finexusinc.com
+                    </a>
+                  </small>
                 </p>
               </div>
             </div>
@@ -145,21 +156,22 @@ const Footer = () => {
                 <p className="m-0 py-2">
                   <small>+91 9841 206 769</small>
                 </p>
-                <p>
-                  <small>talk@finexusinc.com</small>
-                </p>
+                {/* <p>
+                  <small>info@finexusinc.com</small>
+                </p> */}
               </div>
               <div className="col-md-6">
                 <h6 className="fw-bold">Address</h6>
                 <p className="m-0">
                   <small>
-                    39116 Fremont Hub
-                    <br />
-                    Fremont, CA 94538 United States
+                    4597, Donalbain Circle,
+                    <br /> Fremont, CA - 94555
                   </small>
                 </p>
                 <p>
-                  <small>View All 3 Locations</small>
+                  <Link to="/contact">
+                    <small>View All 3 Locations</small>
+                  </Link>
                 </p>
               </div>
             </div>

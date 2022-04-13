@@ -1,17 +1,200 @@
-  #contactForm{
-      width:100%;
-      height:auto;
-      position: relative;
-     
-  }
-#contactForm::after {
-  content: '';
-  width: 100%;
-  height: 90%;
-  position: absolute;
-  top: -100px;
-  right: 0;
+.main {
+  background-color: #F6FBFE;
+}
+
+.first {
+  background-color: #1552F0;
+  //height: 500px;
+  min-height: 500px;
+  //transform: skewY(-5deg);
+}
+
+.firstElement {
+  //transform: skewY(5deg);
+}
+
+.extra {
   background: #1552F0;
   transform: skewY(-5deg);
-  z-index: -1;
+  transform-origin: left bottom;
+  height: 200px;
+}
+
+.second {
+  background: transparent;
+  transform: skewY(-5deg);
+  transform-origin: left bottom;
+  //height: 400px;
+  margin-top: -200px;
+}
+
+.secondElement {
+  transform: skewY(5deg);
+}
+
+.largeFont {
+  font-size: 65px;
+}
+
+.mediumLargeFont {
+  font-size: 50px;
+}
+
+.mediumFont {
+  font-size: 45px;
+}
+
+.smallFont {
+  font-size: 25px;
+}
+
+.smallFontMid {
+  font-size: 22px;
+}
+
+.smallFontMid2 {
+  font-size: 20px;
+}
+
+.verySmallFont {
+  font-size: 18px;
+}
+
+.f400 {
+  font-weight: 400;
+}
+
+.f700 {
+  font-weight: 700;
+}
+
+.ptseriffPro {
+  font-family: 'PT Serif Pro';
+}
+
+.inputElement {
+  width: 45%;
+  border: 1px solid rgba(11, 19, 43, 0.15);
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.selectElement {
+  width: 45%;
+  border: 1px solid rgba(11, 19, 43, 0.15);
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.selectElementH {
+  //width: 45%;
+  //border: 1px solid rgba(11, 19, 43, 0.15);
+  //padding: 15px;
+  //border-radius: 7px;
+  background-color: #D8EFFB;
+}
+
+.txtArea {
+  border: 1px solid rgba(11, 19, 43, 0.15);
+  padding: 5px;
+  width: 95%;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.boxFirst {
+  box-shadow: 11px 13px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 19px;
+  min-height: 500px;
+}
+
+.boxSecond {
+  border-radius: 19px;
+  min-height: 500px;
+}
+
+.quickContact {
+  background-color: #D8EFFB;
+}
+
+.btnClass {
+  display: flex;
+  justify-content: flex-end;
+  margin-inline: 5%;
+
+}
+
+.btnSendMsg {
+  background: #1552F0;
+  box-shadow: 0px 22.3363px 17.869px rgba(21, 82, 240, 0.0417275), 0px 12.5216px 10.0172px rgba(21, 82, 240, 0.035), 0px 6.6501px 5.32008px rgba(21, 82, 240, 0.0282725), 0px 2.76726px 2.21381px rgba(21, 82, 240, 0.0196802);
+  border-radius: 7px;
+  color: white;
+  padding: 15px;
+}
+
+.third {
+  //margin-top: 300px;
+  //height: 500px;
+}
+
+.locationBox {
+  width: 350px;
+  height: 350px;
+  background: #FFFFFF;
+  box-shadow: -3px 5px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 19px;
+}
+
+.fourth {
+  background: linear-gradient(90.9deg, #1552F0 17.88%, #15BBF0 49.19%), #1552F0;
+  min-height: 600px;
+  padding-block: 25px;
+}
+
+.blackBg {
+  background-color: #0B132B;
+  transform: skewY(-1deg);
+  min-height: 550px;
+}
+
+.fourthElements {
+  transform: skewY(1deg);
+}
+
+.bottomBox {
+  background: #FFFFFF;
+  box-shadow: 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+  border-radius: 15px;
+}
+
+input {
+
+  min-width: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .inputElement,
+  .selectElement,
+  .txtArea {
+    width: 90%;
+  }
+
+  .btnSendMsg {
+    width: 90%;
+  }
+
+  .btnClass {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+.firstElement{
+  h1{
+    font-size: 40px !important;
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
 }

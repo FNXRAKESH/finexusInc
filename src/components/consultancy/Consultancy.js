@@ -5,7 +5,9 @@ import consultancy1 from '../../images/Consultancy1.png';
 import consultancy2 from '../../images/Consultancy2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
-const Consultancy = () => {
+import { Link } from 'react-router-dom';
+const Consultancy = (props) => {
+  console.log(props.props.history);
   return (
     <div id="consultancy" className="container py-5">
       <div className="row align-items-center">
@@ -18,14 +20,16 @@ const Consultancy = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div className="py-3 d-md-flex align-items-center btns">
-            <button
+            <Link
+              to='/contact'
               className="btn btn-outline-primary m-2"
               type="button"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
+               
             >
               Let's Talk
-            </button>
+            </Link>
             <p className="fw-bold circles">
               Meet our experts{' '}
               <span>

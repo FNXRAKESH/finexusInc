@@ -1,5 +1,6 @@
  
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Faq.scss'
 
 const Faq = () => {
@@ -16,9 +17,14 @@ const Faq = () => {
                 eiusmod tempor incididunt ut labore.
               </small>
             </p>
-            <button type="button" className="btn btn-dark mb-5">
-              Ask us Anything
-            </button>
+            <Link
+              to="/contact"
+              className="btn btn-dark mb-5"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >Ask us Anything
+            </Link>
           </div>
           <div className="col-lg-7">
             <div className="accordion" id="accordionExample">

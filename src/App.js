@@ -14,7 +14,7 @@ function App() {
     <Router history={history}>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Landing />} />
+        <Route exact path="/" element={<Landing history={history}/>} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

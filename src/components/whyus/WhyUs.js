@@ -12,6 +12,7 @@ import reviews from '../../images/reviews.png';
 import test from '../../images/test.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const WhyUs = () => {
   return (
     <div id="whyUs">
@@ -92,14 +93,16 @@ const WhyUs = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="d-block d-md-none">
-              <button
-                className="btn btn-outline-primary m-2 rounded"
-                type="button"
-                data-toggle="collapse"
-                data-target=".navbar-collapse.show"
-              >
+              <Link
+              to='/contact'
+              className="btn btn-outline-primary m-2"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+               
+            >
                 Let's Talk
-              </button>
+              </Link>
               <div className="reviews py-4">
                 <div className="bg">
                   <img src={reviews} alt="" />
@@ -178,14 +181,16 @@ const WhyUs = () => {
             </div>
             <div className="row d-none d-md-flex">
               <div className="col-md-4 arrowContainer">
-                <button
-                  className="btn btn-outline-primary m-2 rounded"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
+                <Link
+              to='/contact'
+              className="btn btn-outline-primary m-2"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+               
+            >
                   Let's Talk
-                </button>
+                </Link>
                 <div className="d-flex justify-content-end">
                   <img src={arrow2} alt="" />
                 </div>
