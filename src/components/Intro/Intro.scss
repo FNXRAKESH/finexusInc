@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 .mainContainer{
-  background-color: #F5FBFE;
+  background-color: #ffffff;
   
 }
 #intro {
   
   h1 {
-    // font-size: 4.3rem !important;
+    font-size: 4rem !important;
      
     font-family: 'PT Serif', serif;
     font-weight: 700;
+    line-height: 4.5rem;
      
     span {
       background: linear-gradient(to left, #15bbf0, #1552f0);
@@ -34,10 +35,18 @@
       rgba(49, 231, 220,0.15) 5%,
       rgba(140, 49, 231,0.051)
     );
-    width: fit-content;
-    padding: 15px 25px;
-    border-radius: 25px;
+    width: max-content;
+    padding: 15px ;
+    border-radius: 50px;
     font-size: 16px !important;
+    p{
+      font-weight: 600;
+      font-family: 'PT Serif',
+      serif;
+    }
+    span{
+      font-weight: 900;
+    }
   }
 }
   // .blurBg {
@@ -54,7 +63,7 @@
   //   }
   // }
 #trustOne {
-  margin-top: -18rem;
+  margin-top: -17rem;
   position: relative;
   z-index: 99;
 background-color: #F5FBFE;
@@ -62,8 +71,8 @@ background-color: #F5FBFE;
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   #trustOne {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
     background-color: rgba(245, 251, 254, 0.005);
     // background-color: #F5FBFE;
     padding-top: 10px;
@@ -83,13 +92,13 @@ background-color: #F5FBFE;
       font-size: 2rem !important;
       display: flex;
       flex-wrap: wrap;
-       
+      line-height: 2.5rem !important; 
        
     }
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
   #intro {
     padding-top: 20px;
     h1 {

@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Open+Sans:wght@500&display=swap');
 #news{
+  p{
+      font-family: 'PT Serif', serif;
+  }
     h1 {
     
     padding-bottom: 25px;
@@ -11,13 +16,22 @@
       -webkit-text-fill-color: transparent;
     }
   }
+  #blog{
+  h6{
+      font-family: 'PT Serif', serif;
+    line-height: 28px;
+  };
+ p{
+  font-family: 'Inter', sans-serif;
+ }
+}
 }
 
 @media only screen and (max-width:440px){
 #news{
   text-align: center;
-}
-#blog{
-  text-align: left;
+  #blog{
+    text-align: left;
+  }
 }
 }

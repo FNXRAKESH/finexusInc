@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 #header {
- 
+ position: relative;
   z-index: 999;
+  backdrop-filter:  blur(100px);
+    -moz-backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    -o-backdrop-filter: blur(100px);
+   
   .navbar-brand {
     img {
       vertical-align: baseline;
@@ -12,22 +18,29 @@
 #talk{
   button:hover{
   background-color: #1552F0;
-  color:#fff
+  color:#fff !important
+}
+button:hover svg{
+  color: #fff;
+  transition-delay: 0.05s;
 }
 }
   .nav-item {
+   font-family: 'PT Serif', serif !important;
     padding: 0 15px;
-    font-weight: 600;
+    font-weight: 500;
     .active {
-      color: #5761d7;
+      color: #16b2ed;
       
     }
     :hover {
-      color: #5761d7;
+      color: #16b2ed;
     }
   }
   .nav-item a {
     color: #000;
+    
+    font-family: 'PT Serif', serif !important;
   }
   .drop {
     position: relative;
@@ -56,32 +69,38 @@
   .dropdown-item:hover {
     color: #5761d7 !important;
   }
-  :active {
-    background-color: #fff;
-  }
+  // :active {
+  //   background-color: #fff;
+  // }
 }
-.content {
-  padding: 16px;
-}
+ 
+// .content {
+//   padding: 16px 0;
+// }
 
 .sticky {
-  background-color: #5761d7;
-  position: fixed;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+  position: fixed !important;
+  
   width: 100%;
   z-index: 999;
-  padding-top: 20px !important;
-  animation: nav 0.5s ease-in-out;
-  .nav-item a {
-    color: #fff !important;
-  }
-  .btn {
-    color: #fff !important;
-    border: 1px solid #fff !important;
-  }
-  i {
-    color: #fff !important;
-  }
+   
+  // animation: nav 0.05s ease-in-out;
+  #header1 {
+      height: 100%;
+      z-index: -1;
+      width: 100%;
+      position: absolute;
+      // backdrop-filter:blur(100px);
+      //   -moz-backdrop-filter: blur(100px);
+      //   -webkit-backdrop-filter: blur(100px);
+      //   -o-backdrop-filter: blur(100px);
+      pointer-events: none;
+      background-color: #fff;
+      opacity: 0.6;
+    }
+  
+   
   .navbar-toggler:hover {
     background-color: transparent !important;
   }
@@ -96,7 +115,7 @@
 }
 
 .sticky + .content {
-  padding-top: 250px;
+  padding-top: 77px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -143,9 +162,7 @@
 // }
 
  
-.sticky a{
-  color:#fff
-}
+ 
 
 .dropdown-submenu {
     position: relative;

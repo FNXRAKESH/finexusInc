@@ -35,49 +35,67 @@ function sendEmail(e) {
 
 const ContactForm = () => {
   return (
-    <div class="main">
-      <div class="first">
-        <div class="container">
-          <div class="firstElement row">
-            <div class="col-lg-8 my-auto">
-              <h1 class="ptseriffPro f700 largeFont text-white">
+    <div className="main">
+      <div className="first">
+        <div className="container">
+          <div className="firstElement row">
+            <div className="col-lg-8 my-auto">
+              <h1 className="largeFont text-light">
                 Let's create make your business grow!
               </h1>
             </div>
-            <div class="col-lg-4">
-              <img class="w-100 my-4" src={Headphone} alt="headphone" />
+            <div className="col-lg-4">
+              <img className="w-100 my-4" src={Headphone} alt="headphone" />
             </div>
           </div>
         </div>
       </div>
-      <div class="extra"></div>
-      <div class="second">
-        <div class="container">
-          <div class="secondElement row">
-            <div class="col-lg-7 my-3">
-              <form class="boxFirst bg-white py-4" onSubmit={sendEmail}>
-                <div class="d-flex flex-wrap mx-4 justify-content-around mt-4">
+      <div className="extra"></div>
+      <div className="second">
+        <div className="container">
+          <div className="secondElement row">
+            <div className="col-lg-7 my-3">
+              <form
+                className="boxFirst bg-white py-4"
+                action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                method="POST"
+              >
+                <input type="hidden" name="oid" value="00D2x000005O1U3" />
+                <input
+                  type="hidden"
+                  name="retURL"
+                  value="http://finexusinc.com/"
+                />
+                <input type="hidden" name="lead_source" value="Web" />
+                <div className="d-flex flex-wrap mx-4 justify-content-around mt-4">
                   <input
-                    class="inputElement mb-4"
+                    id="first_name"
+                    className="inputElement mb-4"
                     type="text"
                     placeholder="First Name"
-                    name="FirstName"
+                    name="first_name"
                   />
                   <input
-                    class="inputElement mb-4"
+                    id="last_name"
+                    className="inputElement mb-4"
                     type="text"
                     placeholder="Last Name"
-                    name="LastName"
+                    name="last_name"
                   />
                 </div>
-                <div class="d-flex flex-wrap mx-4 justify-content-around">
+                <div className="d-flex flex-wrap mx-4 justify-content-around">
                   <input
-                    class="inputElement mb-4"
+                    id="email"
+                    className="inputElement mb-4"
                     type="text"
                     placeholder="Email Address"
-                    name="EmailAddress"
+                    name="email"
                   />
-                  <select class="selectElement mb-4" name="Product">
+                  <select
+                    className="form-select selectElement mb-4"
+                    id="00N2x000005EXMz"
+                    name="00N2x000005EXMz"
+                  >
                     <option disabled selected>
                       Select Product
                     </option>
@@ -89,88 +107,93 @@ const ContactForm = () => {
                     <option value="Others">Others</option>
                   </select>
                 </div>
-                <div class="d-flex mx-4 justify-content-around">
+                <div className="d-flex mx-4 justify-content-around">
                   <textarea
-                    class="txtArea"
+                    className="txtArea"
                     rows={5}
                     placeholder="Your Message ..."
-                    name="Message"
+                    name="description"
                   />
                 </div>
-                <div class="btnClass my-4">
-                  <button type="submit" class="btnSendMsg">
+                <div className="btnClass my-4">
+                  <button type="submit" name="submit" className="btnSendMsg">
                     Send Message
                   </button>
                 </div>
               </form>
             </div>
-            <div class="col-lg-5 px-4 my-3">
-              <div class="boxSecond quickContact py-4">
-                <div class="d-flex flex-wrap justify-content-between px-5 pb-4">
-                  <h4 class="ptseriffPro f700 smallFont mt-2">Quick Contact</h4>
+            <div className="col-lg-5 px-4 my-3">
+              <div className="boxSecond quickContact py-4">
+                <div className="d-flex flex-wrap justify-content-between px-5 pb-4">
+                  <h4 className="ptseriffPro f700 smallFont mt-2">
+                    Quick Contact
+                  </h4>
 
-                  {/* <select class="selectElementH border-0">
+                  {/* <select className="selectElementH border-0">
                     <option value="saab">Pune, India</option>
                     <option value="opel">Opel</option>
                     <option value="audi">Audi</option>
                   </select> */}
                 </div>
-                <div class="d-flex px-5 py-4">
-                  <div class="">
+                <div className="d-flex px-5 py-4">
+                  <div className="">
                     <img src={Call} alt="Call" />
                   </div>
-                  <div class="mx-4">
+                  <div className="mx-4">
                     <h4
-                      class="f400 verySmallFont"
+                      className="f400 verySmallFont"
                       style={{ color: '#0B132B99' }}
                     >
                       Phone Number
                     </h4>
                     <h4
-                      class="smallFontMid text-break break-all"
+                      className="smallFontMid text-break break-all"
                       style={{ color: '#1552F0' }}
                     >
-                      +1 (510) 585-4200
+                      +1 (781) 752-5204
                     </h4>
                   </div>
                 </div>
-                <div class="d-flex px-5 py-4">
-                  <div class="">
+                <div className="d-flex px-5 py-4">
+                  <div className="">
                     <img src={Mail} alt="Mail" />
                   </div>
-                  <div class="mx-4">
+                  <div className="mx-4">
                     <h4
-                      class="f400 verySmallFont"
+                      className="f400 verySmallFont"
                       style={{ color: '#0B132B99' }}
                     >
                       Email Address
                     </h4>
                     <h4
-                      class="smallFontMid text-break break-all"
+                      className="smallFontMid text-break break-all"
                       style={{ color: '#1552F0' }}
                     >
-                      <a href="mailto:info@finexusinc.com" style={{textDecoration:'none'}}>
+                      <a
+                        href="mailto:info@finexusinc.com"
+                        style={{ textDecoration: 'none' }}
+                      >
                         info@finexusinc.com
                       </a>
                     </h4>
                   </div>
                 </div>
-                <div class="d-flex px-5 py-4">
-                  <div class="">
+                <div className="d-flex px-5 py-4">
+                  <div className="">
                     <img src={Map} alt="Map" />
                   </div>
-                  <div class="mx-4">
+                  <div className="mx-4">
                     <h4
-                      class="f400 verySmallFont"
+                      className="f400 verySmallFont"
                       style={{ color: '#0B132B99' }}
                     >
                       Address
                     </h4>
                     <h4
-                      class="smallFontMid text-break break-all"
+                      className="smallFontMid text-break break-all"
                       style={{ color: '#1552F0' }}
                     >
-                      1901 Thornridge Cir. Shiloh, Hawaii 81063
+                      4597, Donalbain Circle, Fremont, CA - 94555
                     </h4>
                   </div>
                 </div>
@@ -179,18 +202,18 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div class="third">
-        <div class="container">
-          <h4 class="ptseriffPro f700 smallFont my-4">Our Locations</h4>
-          <div class="row my-5 pb-4">
-            <div class="col my-3">
-              <div class="locationBox px-4 py-4 mx-auto">
-                <div class="d-flex justify-content-between py-3">
-                  <h4 class="smallFontMid2" style={{ color: '#1552F0' }}>
-                    USA
+      <div className="third">
+        <div className="container">
+          <h4 className="ptseriffPro f700 smallFont my-4">Our Locations</h4>
+          <div className="row my-5 pb-4">
+            <div className="col my-3">
+              <div className="locationBox px-4 py-4 mx-auto">
+                <div className="d-flex justify-content-between py-3">
+                  <h4 className="smallFontMid2" style={{ color: '#1552F0' }}>
+                    U.S
                   </h4>
                   <div
-                    class="d-flex justify-content-center p-1"
+                    className="d-flex justify-content-center p-1"
                     style={{
                       height: '30px',
                       width: '30px',
@@ -202,10 +225,10 @@ const ContactForm = () => {
                     <img src={Location} alt="Location" />
                   </div>
                 </div>
-                <div class="mb-3">
-                  <h4 class="verySmallFont">Address</h4>
+                <div className="mb-3">
+                  <h4 className="verySmallFont">Address</h4>
                   <h4
-                    class="w-75"
+                    className="w-75"
                     style={{
                       fontSize: '20px',
                       color: 'rgba(11, 19, 43, 0.6)'
@@ -214,10 +237,10 @@ const ContactForm = () => {
                     4597, Donalbain Circle, Fremont, CA - 94555
                   </h4>
                 </div>
-                <div class="">
-                  <h4 class="verySmallFont">Phone</h4>
+                <div className="">
+                  <h4 className="verySmallFont">Phone</h4>
                   <h4
-                    class="smallFontMid2"
+                    className="smallFontMid2"
                     style={{
                       color: 'rgba(11, 19, 43, 0.6)'
                     }}
@@ -227,17 +250,17 @@ const ContactForm = () => {
                 </div>
               </div>
             </div>
-            {/* <div class="col my-3">
-                            <div class="locationBox px-4 py-4">
-                                <div class="d-flex justify-content-between py-3">
+            {/* <div className="col my-3">
+                            <div className="locationBox px-4 py-4">
+                                <div className="d-flex justify-content-between py-3">
                                     <h4
-                                        class="smallFontMid2"
+                                        className="smallFontMid2"
                                         style={{ color: "#1552F0" }}
                                     >
                                         Bangalore, India
                                     </h4>
                                     <div
-                                        class="d-flex justify-content-center p-1"
+                                        className="d-flex justify-content-center p-1"
                                         style={{
                                             height: "30px",
                                             width: "30px",
@@ -250,10 +273,10 @@ const ContactForm = () => {
                                         <img src={Location} alt="Location" />
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <h4 class="verySmallFont">Address</h4>
+                                <div className="mb-3">
+                                    <h4 className="verySmallFont">Address</h4>
                                     <h4
-                                        class="w-75"
+                                        className="w-75"
                                         style={{
                                             fontSize: "20px",
                                             color: "rgba(11, 19, 43, 0.6)",
@@ -264,10 +287,10 @@ const ContactForm = () => {
                                         Karnataka, India 560072
                                     </h4>
                                 </div>
-                                <div class="">
-                                    <h4 class="verySmallFont">Phone</h4>
+                                <div className="">
+                                    <h4 className="verySmallFont">Phone</h4>
                                     <h4
-                                        class="smallFontMid2"
+                                        className="smallFontMid2"
                                         style={{
                                             color: "rgba(11, 19, 43, 0.6)",
                                         }}
@@ -277,14 +300,14 @@ const ContactForm = () => {
                                 </div>
                             </div>
                         </div> */}
-            <div class="col my-3">
-              <div class="locationBox px-4 py-4 mx-auto">
-                <div class="d-flex justify-content-between py-3">
-                  <h4 class="smallFontMid2" style={{ color: '#1552F0' }}>
+            <div className="col my-3">
+              <div className="locationBox px-4 py-4 mx-auto">
+                <div className="d-flex justify-content-between py-3">
+                  <h4 className="smallFontMid2" style={{ color: '#1552F0' }}>
                     Pune, India
                   </h4>
                   <div
-                    class="d-flex justify-content-center p-1"
+                    className="d-flex justify-content-center p-1"
                     style={{
                       height: '30px',
                       width: '30px',
@@ -296,50 +319,49 @@ const ContactForm = () => {
                     <img src={Location} alt="Location" />
                   </div>
                 </div>
-                <div class="mb-3">
-                  <h4 class="verySmallFont">Address</h4>
+                <div className="mb-3">
+                  <h4 className="verySmallFont">Address</h4>
                   <h4
-                    class="w-75"
+                    className="w-75"
                     style={{
                       fontSize: '20px',
                       color: 'rgba(11, 19, 43, 0.6)'
                     }}
                   >
-                    Sr No. 137, Hissa No. 8 &amp; 1 C, Office No. A3030, Opp.
-                    Seasons Mall. Magarpatta Road, Hadapsar, Pune, Maharashtra -
-                    411028
+                    Office No. A3030, Marvel Fuego, Opposite Seasons Mall,
+                    Amanora Park Town, Hadapsar, Pune, Maharashtra - 411028
                   </h4>
                 </div>
-                <div class="">
-                  <h4 class="verySmallFont">Phone</h4>
+                {/* <div className="">
+                  <h4 className="verySmallFont">Phone</h4>
                   <h4
-                    class="smallFontMid2"
+                    className="smallFontMid2"
                     style={{
                       color: 'rgba(11, 19, 43, 0.6)'
                     }}
                   >
                     +91 98412 06769
                   </h4>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
-          <hr class="my-5" style={{ color: 'rgba(11, 19, 43, 0.5)' }} />
+          <hr className="my-5" style={{ color: 'rgba(11, 19, 43, 0.5)' }} />
         </div>
       </div>
-      {/* <div class="fourth">
-                <div class="blackBg d-flex align-items-center">
-                    <div class="container fourthElements">
+      {/* <div className="fourth">
+                <div className="blackBg d-flex align-items-center">
+                    <div className="container fourthElements">
                         <h1
-                            class="ptseriffPro f700 mediumLargeFont text-white my-5 pt-5"
+                            className="ptseriffPro f700 mediumLargeFont text-white my-5 pt-5"
                             style={{ maxWidth: "600px" }}
                         >
                             Ready to grow your business with Finexus?
                         </h1>
-                        <div class="row my-5 py-4">
-                            <div class="col-lg-3 my-2">
-                                <div class="bottomBox d-flex justify-content-between px-4 py-4">
-                                    <h4 class="smallFontMid2">
+                        <div className="row my-5 py-4">
+                            <div className="col-lg-3 my-2">
+                                <div className="bottomBox d-flex justify-content-between px-4 py-4">
+                                    <h4 className="smallFontMid2">
                                         Business consulting
                                     </h4>
                                     <img
@@ -353,9 +375,9 @@ const ContactForm = () => {
                                     />
                                 </div>
                             </div>
-                            <div class="col-lg-3 my-2">
-                                <div class="bottomBox d-flex justify-content-between px-4 py-4">
-                                    <h4 class="smallFontMid2">Maintenance</h4>
+                            <div className="col-lg-3 my-2">
+                                <div className="bottomBox d-flex justify-content-between px-4 py-4">
+                                    <h4 className="smallFontMid2">Maintenance</h4>
                                     <img
                                         height="20px"
                                         width="20px"
@@ -367,9 +389,9 @@ const ContactForm = () => {
                                     />
                                 </div>
                             </div>
-                            <div class="col-lg-3 my-2">
-                                <div class="bottomBox d-flex justify-content-between px-4 py-4">
-                                    <h4 class="smallFontMid2">
+                            <div className="col-lg-3 my-2">
+                                <div className="bottomBox d-flex justify-content-between px-4 py-4">
+                                    <h4 className="smallFontMid2">
                                         Mobile Origination
                                     </h4>
                                     <img
@@ -383,9 +405,9 @@ const ContactForm = () => {
                                     />
                                 </div>
                             </div>
-                            <div class="col-lg-3 my-2">
-                                <div class="bottomBox d-flex justify-content-between px-4 py-4">
-                                    <h4 class="smallFontMid2">Collection</h4>
+                            <div className="col-lg-3 my-2">
+                                <div className="bottomBox d-flex justify-content-between px-4 py-4">
+                                    <h4 className="smallFontMid2">Collection</h4>
                                     <img
                                         height="20px"
                                         width="20px"
@@ -399,42 +421,42 @@ const ContactForm = () => {
                             </div>
                         </div>
                         <hr style={{ color: "rgba(255, 255, 255, 0.5)" }} />
-                        <div class="row my-5 py-4">
-                            <div class="col-lg-3 my-2">
-                                <h4 class="text-white mediumFont">Finexus</h4>
-                                <div class="d-flex mt-3">
+                        <div className="row my-5 py-4">
+                            <div className="col-lg-3 my-2">
+                                <h4 className="text-white mediumFont">Finexus</h4>
+                                <div className="d-flex mt-3">
                                     <img
-                                        class="mx-3"
+                                        className="mx-3"
                                         src={Fb2}
                                         alt="Facebook"
                                     />
                                     <img
-                                        class="mx-3"
+                                        className="mx-3"
                                         src={Youtube}
                                         alt="Youtube"
                                     />
                                     <img
                                         height="20"
                                         width="20"
-                                        class="mx-3"
+                                        className="mx-3"
                                         src={InstaNew}
                                         alt="Instagram"
                                     />
                                     <img
                                         height="20"
                                         width="20"
-                                        class="mx-3"
+                                        className="mx-3"
                                         src={LinkedInNew}
                                         alt="LinkedIn"
                                     />
                                 </div>
                             </div>
-                            <div class="col-lg-3 my-2 text-break break-all">
-                                <h4 class="ptseriffPro f700 text-white smallFontMid2 mt-2">
+                            <div className="col-lg-3 my-2 text-break break-all">
+                                <h4 className="ptseriffPro f700 text-white smallFontMid2 mt-2">
                                     Get Started
                                 </h4>
                                 <h4
-                                    class="verySmallFont mt-3"
+                                    className="verySmallFont mt-3"
                                     style={{
                                         color: "rgba(255, 255, 255, 0.6)",
                                     }}
@@ -442,7 +464,7 @@ const ContactForm = () => {
                                     <u>Start a project</u>
                                 </h4>
                                 <h4
-                                    class="verySmallFont"
+                                    className="verySmallFont"
                                     style={{
                                         color: "rgba(255, 255, 255, 0.6)",
                                     }}
@@ -450,12 +472,12 @@ const ContactForm = () => {
                                     contact@finexusinc.com
                                 </h4>
                             </div>
-                            <div class="col-lg-3 my-2 text-break break-all">
-                                <h4 class="ptseriffPro f700 text-white smallFontMid2 mt-2">
+                            <div className="col-lg-3 my-2 text-break break-all">
+                                <h4 className="ptseriffPro f700 text-white smallFontMid2 mt-2">
                                     Speak to Us
                                 </h4>
                                 <h4
-                                    class="verySmallFont mt-3"
+                                    className="verySmallFont mt-3"
                                     style={{
                                         color: "rgba(255, 255, 255, 0.6)",
                                     }}
@@ -463,7 +485,7 @@ const ContactForm = () => {
                                     +1 (406) 555-0120
                                 </h4>
                                 <h4
-                                    class="verySmallFont"
+                                    className="verySmallFont"
                                     style={{
                                         color: "rgba(255, 255, 255, 0.6)",
                                     }}
@@ -471,12 +493,12 @@ const ContactForm = () => {
                                     talk@finexusinc.com
                                 </h4>
                             </div>
-                            <div class="col-lg-3 my-2 text-break break-all">
-                                <h4 class="ptseriffPro f700 text-white smallFontMid2 mt-2">
+                            <div className="col-lg-3 my-2 text-break break-all">
+                                <h4 className="ptseriffPro f700 text-white smallFontMid2 mt-2">
                                     Address
                                 </h4>
                                 <h4
-                                    class="verySmallFont mt-3"
+                                    className="verySmallFont mt-3"
                                     style={{
                                         color: "rgba(255, 255, 255, 0.6)",
                                     }}

@@ -1,8 +1,18 @@
+.overLay{
+  position: fixed;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 999;
+}
 #consultancy {
     position: relative;
   h1 {
-    
-    font-family: 'PT Serif', serif;
+    font-size: 40px;
+     line-height: 50px;
     font-weight: 800;
     position: relative;
     span {
@@ -64,12 +74,59 @@ align-items: center;
 border-radius: 25px;
 padding:15px;
 color:#fff;
-     }
+max-height: 200px;
+  width: 200px;
+  transition: max-height 0.25s ease-in-out;
+p{
+  position: relative;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+}
+.blueBg:hover {
+  max-height: 400px;
+  transition: max-height 0.25s ease-in-out;
+ 
+
+}
+
+.blueBg:hover p {
+
+  overflow: visible;
+  text-overflow: unset;
+  white-space: inherit;
+  transition-delay: 2s ease-in-out;
+}
+ 
      .greyBg{
          background: #f5f5f5;
 border-radius: 25px;
 padding:15px;
 color:#000;
+max-height: 200px;
+  width: 200px;
+  transition: max-height 0.25s ease-in-out;
+  p {
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      
+    }
+     }
+     .greyBg:hover{
+       max-height: 400px;
+      transition: max-height 0.25s ease-in;
+       
+      
+     }
+     .greyBg:hover p{
+       
+        overflow: visible;
+        text-overflow: unset;
+        white-space: inherit;
+        transition-delay:2s ease-in;
      }
   }
   button{
@@ -116,13 +173,39 @@ color:#000;
 border-radius: 25px;
 padding:15px;
 color:#fff;
+height: 400px;
+p {
+  text-align: left !important;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: inherit;
+
+  }
      }
      .greyBg{
          background: #f5f5f5;
 border-radius: 25px;
 padding:15px;
 color:#000;
+height: 320px;
+p {
+text-align: left !important;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: inherit;
+
+  }
      }
+          
+    
+         
+       
+    
+       
   }
 }
+}
+
+.overLay.childhover {
+  background-color: rgba(140, 49, 231, 0.034) !important;
 }

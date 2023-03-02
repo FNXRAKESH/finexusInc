@@ -1,30 +1,60 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import './Header.scss';
+import { createBrowserHistory } from 'history';
 // import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faComment, faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
- import Finexus from '../../images/Finexus.png'
-export default class Header extends Component {
-  state = { bgColor:'#F5FBFE' };
-  componentDidMount = () => {
-    window.onscroll = function () {
-      // myFunction();
-    };
+import { HashLink } from 'react-router-hash-link';
+import Finexus from '../../images/Finexus.png';
+import finexusWhite from '../../images/finexusWhite.png';
+import { useNavigate } from 'react-router-dom';
+ 
+ 
+
+const Header = () => {
+  const [logo, setLogo] = useState(Finexus);
+  const [fontColor, setFontColor] = useState('#000');
+  const [bgColor, setBgColor] = useState('transparent');
+    const history = useNavigate();
+  useEffect(() => {
+    console.log('this ', location);
+    if (location.hash == '#/webinar' || location.hash == '#/contact') {
+      setLogo(finexusWhite);
+      setFontColor('#fff');
+      setBgColor('#1552F0');
+    } else if (location.hash == '#/') {
+      setLogo(Finexus);
+      setBgColor(null);
+      setFontColor('#000');
+    }
+      window.onscroll = function () {
+        myFunction();
+      };
 
     var navbar = document.getElementById('header');
-    var sticky = navbar.offsetTop + 100;
-    var logoScroll = document.getElementById('logo');
-    var mybutton = document.getElementById('myBtn');
-    function myFunction() {
+    var sticky = navbar.offsetTop + 250;
+    
+    // var mybutton = document.getElementById('myBtn');
+    function myFunction(e) {
+      
       if (window.pageYOffset >= sticky) {
         navbar.classList.add('sticky');
-        logoScroll.setAttribute('src', logo1);
-        mybutton.style.display = 'block';
+        setLogo(Finexus);
+        setFontColor('#000')
+        setBgColor(null);
+        //  this.setState({ logo: Finexus });
+        // logoScroll.setAttribute('src', logo1);
+        // mybutton.style.display = 'block';
       } else {
-        logoScroll.setAttribute('src', logo);
+        // logoScroll.setAttribute('src', logo);
         navbar.classList.remove('sticky');
-        mybutton.style.display = 'none';
+        if (location.hash == '#/webinar' || location.hash == '#/contact') {
+          setLogo(finexusWhite);
+          setFontColor('#fff');
+          setBgColor('#1552F0');
+        }
+        // mybutton.style.display = 'none';
       }
     }
     // $('.nav-item .nav-link').on('click', function () {
@@ -35,30 +65,35 @@ export default class Header extends Component {
     //   $('.nav-item').find('.active').removeClass('active');
     //   $(this).parent().parent().find('.nav-link').addClass('active');
     // });
-  };
-  render() {
-    console.log(this.props);
+   
+  })
+ 
+    
+    
     return (
       <nav
         id="header"
-        className="navbar navbar-expand-lg pt-3"
+        className="navbar navbar-expand-lg"
         style={{
-          backgroundColor: this.state.bgColor,
-          color: this.state.bgColor == 'white' ? 'black' : 'white'
+          backgroundColor: bgColor
         }}
       >
-        <div className="container">
-          <Link
-            to="/"
-            className="nav-link"
-            onClick={() => this.setState({ bgColor: '#F5FBFE' })}
-          >
+        <div id="header1"></div>
+        <div className="container-fluid">
+          <div className="px-4">
             <img
               className="navbar-brand fw-bold"
-              src={Finexus}
+              src={logo}
               alt="FinexusInc"
+              onClick={() => {
+                history('/');
+                setLogo(Finexus);
+                setFontColor('#000');
+                setBgColor('transparent');
+              }}
             />
-          </Link>
+          </div>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -78,52 +113,62 @@ export default class Header extends Component {
                 data-toggle="collapse"
                 data-target=".navbar-collapse.show"
               >
-                <Link
-                  to="/"
+                {window.innerWidth <= 760 ? <HashLink
+                  to="/#aboutus"
                   className="nav-link"
-                  onClick={() => this.setState({ bgColor: 'white' })}
+                  style={{ color: fontColor }}
                 >
                   About
-                </Link>
+                </HashLink> :
+                  <HashLink
+                    to="/#about"
+                    className="nav-link"
+                    style={{ color: fontColor }}
+                  >
+                    About
+                  </HashLink>}
               </li>
               <li
                 className="nav-item "
                 data-toggle="collapse"
                 data-target=".navbar-collapse.show"
               >
-                <Link
-                  to="/"
+                <HashLink
+                  to="/#solutions"
                   className="nav-link"
-                  onClick={() => this.setState({ bgColor: 'white' })}
+                  style={{ color: fontColor }}
+                  // onClick={() => this.setState({ bgColor: 'white' })}
                 >
                   Solutions
-                </Link>
+                </HashLink>
               </li>
               <li
                 className="nav-item "
                 data-toggle="collapse"
                 data-target=".navbar-collapse.show"
               >
-                <Link
-                  to="/"
+                <HashLink
+                  to="/#consultancy"
                   className="nav-link"
-                  onClick={() => this.setState({ bgColor: 'white' })}
+                  style={{ color: fontColor }}
+                  // onClick={() => this.setState({ bgColor: 'white' })}
                 >
                   Services
-                </Link>
+                </HashLink>
               </li>
               <li
                 className="nav-item "
                 data-toggle="collapse"
                 data-target=".navbar-collapse.show"
               >
-                <Link
-                  to="/"
+                <HashLink
+                  to="/#ourProducts"
                   className="nav-link"
-                  onClick={() => this.setState({ bgColor: 'white' })}
+                  style={{ color: fontColor }}
+                  // onClick={() => this.setState({ bgColor: 'white' })}
                 >
                   Products
-                </Link>
+                </HashLink>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0 me-5">
@@ -133,9 +178,11 @@ export default class Header extends Component {
                   type="button"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
-                  onClick={() => this.setState({ bgColor: '#1552F0' })}
+                  style={{ color: fontColor }}
+                  // onClick={() => this.setState({ bgColor: '#1552F0' })}
                 >
-                  Let's Talk
+                  <FontAwesomeIcon icon={faCommentDots} color={fontColor} />
+                  &nbsp;Let's Talk
                 </button>
               </Link>
             </form>
@@ -144,4 +191,5 @@ export default class Header extends Component {
       </nav>
     );
   }
-}
+
+export default  Header

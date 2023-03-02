@@ -11,10 +11,11 @@
   }
   h1 {
     padding-bottom: 25px;
-    font-family: 'PT Serif', serif;
+     
     font-weight: 800;
     color:#000;
     text-align: left;
+    font-size: 40px;
     span {
       background: -webkit-linear-gradient(180deg, #15bbf0, #1552f0);
       -webkit-background-clip: text;
@@ -24,18 +25,18 @@
   }
   .boxes {
     margin: 0 10px 15px 0;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #fff;
     box-shadow: 5px 5px 10px rgb(216, 215, 215);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 
     h6 {
       padding-top: 10px;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 17px;
       line-height: 25px;
     }
     img {
@@ -74,6 +75,9 @@
       border-radius: 15px;
        z-index: 2;
        font-weight: bold;
+       p{
+         color: #000;
+       }
     }
     .bgBlue {
       color: #fff;
@@ -110,12 +114,14 @@
     background-color: #F5F8FE;
       
      h3{
-       font-weight: 900;
+       font-weight: bolder;
        color: rgba(21, 82, 240, 1);
+       font-size: 3rem;
      }
      p{
-       color: rgba(11, 19, 43, 0.7);
-font-size: 12px;
+       color: rgba(11, 19, 43, 0.6);
+       font-size: 17px;
+ 
      }
   }
 .count::before {
@@ -152,12 +158,18 @@ font-size: 12px;
 }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
   #whyUs{
     margin-top: 0 !important;
     text-align: center;
     .reviewPanel {
       padding: 20px !important;
+    }
+    h1{
+      width: 100%;
+      margin: 0 auto;
+
+      
     }
     .arrowContainer {
       display: flex !important;
@@ -170,6 +182,10 @@ font-size: 12px;
     }
     .boxes{
       background-color: #fff !important;
+      h6{
+        font-size: 12px;
+        text-align: left;
+      }
     }
      .blueBg {
     background-color: #1552f0 !important;
@@ -181,6 +197,11 @@ font-size: 12px;
   }
   .count::before {
     top:-10px !important
+  }
+  #values{
+    h3{
+      font-size: 2.5rem !important;
+    }
   }
   }
 }

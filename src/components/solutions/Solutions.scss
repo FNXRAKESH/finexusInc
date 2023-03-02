@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  background: #1552f0;
+  background-color: #1552F0;
 margin-bottom: 20px;
 z-index: 1;
  #companies{
@@ -13,13 +13,14 @@ z-index: 1;
     text-align: center;
     color: #fff;
     padding: 10px;
-    font-size: 3.7rem;
+    font-size: 3.2rem;
     line-height: 4rem;
      
   }
 .title{
   font-weight: 900;
   font-size: 40px;
+  line-height: 45px;
 }
   .title,
   .link {
@@ -29,17 +30,15 @@ z-index: 1;
     color: rgba($color: #fff, $alpha: 0.6);
   }
   .colorBg {
-    background-image: url('../../images/Rectangle.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: linear-gradient(127.55deg, rgba(255, 255, 255, 0.15) 28.27%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 15px;
     color: #fff;
     
   }
   .blueBg {
     color: #fff;
-    background-image: url('../../images/RectangleBlue.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: linear-gradient(127.55deg, rgba(255, 255, 255, 0.15) 28.27%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 15px;
     margin-right: 25px;
      
   }
@@ -72,12 +71,12 @@ z-index: 1;
 #solutions::before {
   content: '';
   width: 100%;
-  height: 100%;
+  height: 20%;
   position: absolute;
   top: -90px;
   right: 0;
-  background: #1552f0;
-  transform: skewY(-5deg);
+  background: #1454f0;
+  // transform: skewY(-5deg);
   z-index: -1;
   border-top: 10px solid #15bbf0;
 }
@@ -134,17 +133,17 @@ z-index: 1;
       position: relative;
      
   }
-#clients::after {
-  content: '';
-  width: 100%;
-  height: 90%;
-  position: absolute;
-  top: -150px;
-  right: 0;
-  background: #1552f0;
-  transform: skewY(-5deg);
-  z-index: -1;
-}
+// #solutions::after {
+//   content: '';
+//   width: 100%;
+//   height:50%;
+//   position: absolute;
+//   bottom: -150px;
+//   right: 0;
+//   background: linear-gradient(180deg, #1552F0 10%, rgba(21, 82, 240, 0));
+//   transform: skewY(-5deg);
+//   z-index: -1;
+// }
 
 @media only screen and (max-width:1024px){
   #solutions{
@@ -175,9 +174,16 @@ h5{
      
   }
 }
-@media only screen and (max-width:414px){
+@media only screen and (max-width:415px){
+  #solutions{
+    .solutionTitle {
+        font-size: 2rem !important;
+        line-height: 2.5rem;
+      }
+  }
   #solutionType{
     padding: 0 15px;
+    
   }
 .happyClients{
  padding:20px !important;

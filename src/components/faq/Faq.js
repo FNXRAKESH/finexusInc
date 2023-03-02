@@ -11,19 +11,15 @@ const Faq = () => {
             <h1>
               Frequently Asked&nbsp;<span>Questions</span>
             </h1>
-            <p>
-              <small>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </small>
-            </p>
+           
             <Link
               to="/contact"
               className="btn btn-dark mb-5"
               type="button"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >Ask us Anything
+            >
+              Ask us Anything
             </Link>
           </div>
           <div className="col-lg-7">
@@ -38,7 +34,7 @@ const Faq = () => {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Why is my account associated with a country?
+                    What all geographies do you serve in?
                   </button>
                 </h2>
                 <div
@@ -48,8 +44,7 @@ const Faq = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore.
+                    We currently serve in the USA, Canada and India.
                   </div>
                 </div>
               </div>
@@ -63,8 +58,8 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    How can I remove information about myself from Google's
-                    search results?
+                    Do you customize per client or is it one single solution for
+                    all clients?
                   </button>
                 </h2>
                 <div
@@ -74,8 +69,9 @@ const Faq = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore.
+                    We take the base product and then configure it to fit in
+                    client specific business processes. In addition we also
+                    build client specific custom solutions as needed.
                   </div>
                 </div>
               </div>
@@ -89,7 +85,7 @@ const Faq = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Why is my account associated with a country?
+                    How long is a typical project timeline?
                   </button>
                 </h2>
                 <div
@@ -99,8 +95,8 @@ const Faq = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore.
+                    A typical project takes anywhere from 4-6 months. For larger
+                    projects the timeline varies based on customer use cases.
                   </div>
                 </div>
               </div>

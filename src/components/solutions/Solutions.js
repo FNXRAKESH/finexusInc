@@ -61,42 +61,51 @@ export default class Solutions extends Component {
               Our business solutions
             </h6>
             <h1 className="solutionTitle pb-5">
-              Industry leading Solutions for{' '}
+              End-to-end Solutions for Consumers and Small{' '}
               <br className="d-md-block d-none" />
-              the leading businesses
+              Businesses Lenders, Fintechs and Banks
             </h1>
-            <div id="solutionType" className="py-md-5 row align-items-center ">
-              <div className="col-lg-6 col-md-auto">
+            <div id="solutionType" className="py-md-5 row">
+              <div className="col-lg-7 col-md-auto">
                 <img
                   src={rightImg}
                   alt=""
                   className="img-fluid pb-5 d-block d-md-none"
                 />
-                <h3 className="title">Fintech Heading</h3>
+                <h1 className="title">
+                  Industry Leading Solutions for the Lending Businesses
+                </h1>
                 <p className="desc py-3 m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod
-                  <br /> tempor incididunt ut labore et dolore magna aliqua.
+                  We provide and implement consumers and small businesses
+                  lending solutions including Borrower Mobile App, self service
+                  customer web portal, loan origination, servicing &amp;
+                  collection solutions.
                 </p>
-                <div className="d-flex align-items-center">
+                {/* <div className="d-flex align-items-center">
                   <p className="link m-0 pe-3">
-                    Learn more about mobile origination
+                    Learn more
                   </p>
                   <FontAwesomeIcon icon={faLongArrowAltRight} color="#fff" />
-                </div>
+                </div> */}
 
                 <div className="row py-5 boxes">
                   <div className="col colorBg p-5 me-5">
-                    <h2 className="fw-bold">32% +</h2>
-                    <p>Increase page views and grow business</p>
+                    <h2 className="fw-bold">Front-End</h2>
+                    <p>
+                      Includes Borrower Mobile App, Self Service Web Portal for
+                      Borrower.
+                    </p>
                   </div>
                   <div className="col blueBg p-5">
-                    <h2 className="fw-bold">32% +</h2>
-                    <p>Increase page views and grow business</p>
+                    <h2 className="fw-bold">Back-End</h2>
+                    <p>
+                      Includes Origination, Servicing &amp; Collection
+                      Solutuons.
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-auto py-2 d-none d-md-block  mx-auto">
+              <div className="col-lg-5 col-md-auto py-2 d-none d-md-block  mx-auto">
                 <img src={rightImg} alt="" className="img-fluid" />
               </div>
             </div>
@@ -126,7 +135,7 @@ export default class Solutions extends Component {
                 </div>
               </div>
             </div> */}
-            <div style={{ height: 50 }} className="d-none d-md-block "></div>
+            {/* <div style={{ height: 50 }} className="d-none d-md-block "></div> */}
             {/* <div
               id="companies"
               className="d-flex justify-content-evenly py-md-4 flex-wrap"
@@ -143,7 +152,7 @@ export default class Solutions extends Component {
             </div> */}
           </div>
         </div>
-        <div id="clients" className="mb-5">
+        {/* <div id="clients" className="mb-5">
           <div className="container">
             <div className="happyClients row align-items-center justify-content-around">
               <div className="col-lg-6  d-flex justify-content-around ps-5">
@@ -172,7 +181,7 @@ export default class Solutions extends Component {
                   showNavigation={this.state.showNavigation}
                   animationConfig={this.state.config}
                 />
-                {/* <div className="slider d-flex align-items-center">
+                 <div className="slider d-flex align-items-center">
                 <div>
                   <h6>
                     Carla Smith | <small>Monexo</small>
@@ -183,11 +192,11 @@ export default class Solutions extends Component {
                   </p>
                 </div>
                 <img src={client} alt="" />
-              </div> */}
+              </div> 
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </>
     );
   }

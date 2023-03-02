@@ -11,10 +11,13 @@ import review from '../../images/review.png';
 import reviews from '../../images/reviews.png';
 import test from '../../images/test.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+
+import TestimonialCarousel from '../testimonySlider/TestimonialCarousel';
 const WhyUs = () => {
   return (
+     
     <div id="whyUs">
       <div className="container pt-5">
         <div className="row">
@@ -23,31 +26,19 @@ const WhyUs = () => {
               <div className="col-4 ">
                 <div className="boxes">
                   <img src={boxes1} alt="boxes1" className="img-fluid" />
-                  <h6>
-                    Can save
-                    <br />
-                    Time &amp; Money
-                  </h6>
+                  <h6>Lending Industry Experience</h6>
                 </div>
               </div>
               <div className="col-4">
                 <div className="boxes blueBg">
                   <img src={boxes2} alt="boxes2" className="img-fluid" />
-                  <h6>
-                    Business
-                    <br />
-                    strategies
-                  </h6>
+                  <h6>Market Leading Products</h6>
                 </div>
               </div>
               <div className="col-4">
                 <div className="boxes">
                   <img src={boxes3} alt="boxes3" className="img-fluid" />
-                  <h6>
-                    Professional
-                    <br />
-                    services
-                  </h6>
+                  <h6>Solid Technical Expertise</h6>
                 </div>
               </div>
             </div>
@@ -55,31 +46,19 @@ const WhyUs = () => {
               <div className="col-4">
                 <div className="boxes">
                   <img src={boxes4} alt="boxes4" className="img-fluid" />
-                  <h6>
-                    Custom
-                    <br />
-                    products
-                  </h6>
+                  <h6>Time Bound Implementations</h6>
                 </div>
               </div>
               <div className="col-4">
                 <div className="boxes">
                   <img src={boxes5} alt="boxes5" className="img-fluid" />
-                  <h6>
-                    24 / 7 hour
-                    <br />
-                    support
-                  </h6>
+                  <h6>Transparency with Customers</h6>
                 </div>
               </div>
               <div className="col-4">
                 <div className="boxes">
                   <img src={boxes6} alt="boxes6" className="img-fluid" />
-                  <h6>
-                    Dedicated
-                    <br />
-                    teams
-                  </h6>
+                  <h6>Custom Solutions as needed</h6>
                 </div>
               </div>
             </div>
@@ -89,48 +68,24 @@ const WhyUs = () => {
               <span>Why Choose</span>&nbsp;Finexus for your business?
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We understand that every business is different, and we tailor our
+              solutions to meet each client’s specific needs. Our team of
+              experts is dedicated to providing you with the best possible
+              service, and we are always up for a challenge.
             </p>
-            <div className="d-block d-md-none">
-              <Link
-              to='/contact'
-              className="btn btn-outline-primary m-2"
-              type="button"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-               
-            >
-                Let's Talk
-              </Link>
-              <div className="reviews py-4">
-                <div className="bg">
-                  <img src={reviews} alt="" />
-                </div>
-                <p className="m-0 py-3 fw-bold">623k reviews on Google</p>
-                <img src={review} alt="" />
-              </div>
-            </div>
+
             <div className="d-block d-md-none pt-5">
               <div className="row">
                 <div className="col ">
                   <div className="boxes">
                     <img src={boxes1} alt="boxes1" className="img-fluid" />
-                    <h6>
-                      Can save
-                      <br />
-                      Time &amp; Money
-                    </h6>
+                    <h6>Lending Industry Experience</h6>
                   </div>
                 </div>
                 <div className="col">
                   <div className="boxes blueBg">
                     <img src={boxes2} alt="boxes2" className="img-fluid" />
-                    <h6>
-                      Business
-                      <br />
-                      strategies
-                    </h6>
+                    <h6>Market Leading Products</h6>
                   </div>
                 </div>
               </div>
@@ -138,21 +93,13 @@ const WhyUs = () => {
                 <div className="col">
                   <div className="boxes">
                     <img src={boxes3} alt="boxes3" className="img-fluid" />
-                    <h6>
-                      Professional
-                      <br />
-                      services
-                    </h6>
+                    <h6>Solid Technical Expertise</h6>
                   </div>
                 </div>
                 <div className="col">
                   <div className="boxes">
                     <img src={boxes4} alt="boxes4" className="img-fluid" />
-                    <h6>
-                      Custom
-                      <br />
-                      products
-                    </h6>
+                    <h6>Time Bound Implementations</h6>
                   </div>
                 </div>
               </div>
@@ -160,42 +107,48 @@ const WhyUs = () => {
                 <div className="col">
                   <div className="boxes">
                     <img src={boxes5} alt="boxes5" className="img-fluid" />
-                    <h6>
-                      24 / 7 hour
-                      <br />
-                      support
-                    </h6>
+                    <h6>Transparency with Customers</h6>
                   </div>
                 </div>
                 <div className="col">
                   <div className="boxes">
                     <img src={boxes6} alt="boxes6" className="img-fluid" />
-                    <h6>
-                      Dedicated
-                      <br />
-                      teams
-                    </h6>
+                    <h6>Custom Solutions as needed</h6>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="row d-none d-md-flex">
-              <div className="col-md-4 arrowContainer">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-start flex-wrap">
+              <div className="arrowContainer">
                 <Link
-              to='/contact'
-              className="btn btn-outline-primary m-2"
-              type="button"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-               
-            >
+                  to="/contact"
+                  className="btn btn-outline-primary m-2"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
                   Let's Talk
                 </Link>
-                <div className="d-flex justify-content-end">
-                  <img src={arrow2} alt="" />
-                </div>
               </div>
-              <div className="col-md-8">
+
+              <a
+                href="mailto:info@finexusinc.com"
+                className="d-flex justify-content-end align-items-center ps-3"
+              >
+                <FontAwesomeIcon icon={faEnvelope} color="#1552F0" />
+                <p
+                  className="m-0 ps-2"
+                  style={{
+                    color: '#1552F0',
+                    fontWeight: 700,
+                    fontSize: 16 + 'px'
+                  }}
+                >
+                  Know more about us
+                </p>
+              </a>
+
+              {/* <div className="col-md-8">
                 <div className="reviews">
                   <div className="bg">
                     <img src={reviews} alt="" />
@@ -203,7 +156,7 @@ const WhyUs = () => {
                   <p className="m-0 py-3 fw-bold">623k reviews on Google</p>
                   <img src={review} alt="" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -211,102 +164,46 @@ const WhyUs = () => {
       </div>
       <div className="count">
         <div className="container">
-          <div className="row py-5">
-            <div className="col-lg-6">
-              <h1>
-                Improved over
-                <span> 160+</span>&nbsp;businesses worldwide
-              </h1>
-            </div>
-            <div className="col-lg-6 ps-md-5">
-              <p className="text-start">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum
-                dolor sit amet.
-              </p>
-            </div>
-          </div>
-          {/* <div className="testimonial row">
-            <div
-              className="col-lg-4 position-relative mb-3"
-              style={{ zIndex: 1 }}
-            >
-              <div className="bgBlue">
-                <FontAwesomeIcon icon={faQuoteRight} color="#15BBF0" />
-                <p className="py-3">
-                  They have been a great partner as we grow our business ...
-                </p>
-                <div className="d-flex">
-                  <div className="flex-grow-1">
-                    <h6>— Carla Smith</h6>
-                    <small style={{ fontWeight: 'normal' }}>
-                      CTO, ClassKlap
-                    </small>
-                  </div>
-                  <img src={test} alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-3" style={{ zIndex: 1 }}>
-              <div className="test1">
-                <FontAwesomeIcon icon={faQuoteRight} color="#dadcdf" />
-                <p className="py-3">
-                  We finally found a smart and conscientious partner
-                </p>
-                <div className="d-flex">
-                  <div className="flex-grow-1">
-                    <h6>— Carla Smith</h6>
-                    <small style={{ fontWeight: 'normal' }}>
-                      CTO, Ascendus
-                    </small>
-                  </div>
-                  <img src={test} alt="" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-3" style={{ zIndex: 1 }}>
-              <div className="test1">
-                <FontAwesomeIcon icon={faQuoteRight} color="#dadcdf" />
-                <p className="py-3">
-                  I just wanted to share a quick note and you let you know that
-                  ...
-                </p>
-                <div className="d-flex">
-                  <div className="flex-grow-1">
-                    <h6>— Carla Smith</h6>
-                    <small style={{ fontWeight: 'normal' }}>
-                      CTO, Credit4Work
-                    </small>
-                  </div>
-                  <img src={test} alt="" />
-                </div>
-              </div>
-            </div>
-          </div> */}
+          <div className="pt-5">
+            <h1 className="text-center">
+              Helped over
+              <span> 32+ businesses worldwide </span>
+              <br />
+              in growing their lending portfolio.
+            </h1>
 
-          <div >
-            <div className="container py-5">
+            <p className="text-center">
+              We work with companies across North America, Asia &amp; Europe
+              offering our fintech products and services.
+            </p>
+          </div>
+          <div className="py-5">
+            <TestimonialCarousel />
+          </div>
+
+          <div>
+            <div id="values" className="container">
               <div className="row">
                 <div className="col-lg-6 mb-3">
                   <div className="row">
                     <div className="col text-center">
-                      <h3>32 +</h3>
-                      <p>Companies</p>
+                      <h3>32+</h3>
+                      <p>Client Served</p>
                     </div>
                     <div className="col text-center">
-                      <h3>$ 1.2M</h3>
-                      <p>Follows on Internet</p>
+                      <h3>$250M</h3>
+                      <p>Revenue Generated</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-6 mb-3">
                   <div className="row">
                     <div className="col text-center">
-                      <h3>123</h3>
-                      <p>Businesses</p>
+                      <h3>12</h3>
+                      <p>Lending Assets</p>
                     </div>
                     <div className="col text-center">
-                      <h3>$ 1.2B</h3>
+                      <h3>$3.5B</h3>
                       <p>Portfolio Companies</p>
                     </div>
                   </div>
